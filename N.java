@@ -1,34 +1,59 @@
 class N
 {
-    static double Value;
+
+
+	static double Value;
 	
-    static short shortValue;	
-	
+	static short shortValue;
+
 	public static void main(String[]args)
-	 { 
-	     
-		O obj  =new O();
-		O obj1 =new O();
-        O obj2 =new O();
-        O obj3 =new O();
-        O obj4 =obj;	
-        O obj5 =obj;
-
-       System.out.println(obj.Value);
-
-	   System.out.println(obj);
-	   System.out.println(obj1); 
-   	   System.out.println(obj2); 
-	   System.out.println(obj3); 
-	   System.out.println(obj4);	 
-	   System.out.println(obj5); 
-		 
-	 } 
-	 public static void method1()
-	 {
-	 
-	 }
-}
-		 
-		 
+	{
+	
+	
+		System.out.println("Main End");
 		
+		
+		int Value = method1();
+		
+		System.out.println(Value);
+		
+		      int shortValue=method2();
+			  System.out.println(shortValue);
+			  
+			  int String s1 = method3();
+			  System.out.println(s1);
+	}
+	
+	
+	public static int method1()
+	{
+		 Value=400.40;
+		//double Value1=400.40;
+		
+		//int Value=(int)Value1;
+		
+		return (int)Value;
+	
+	}
+	
+	public static int method2()
+	{
+		 shortValue=300;
+		//double Value1=400.40;
+		
+		//int Value=(int)Value1;
+		
+		return shortValue;
+	
+	}
+	
+	public static int method3()
+	{
+		return 0;
+	}
+	
+	
+	
+	
+
+}
